@@ -3,7 +3,7 @@ export const img = "imges/me4.png";
 // 이름
 export const name = "노우준";
 // 직책
-export const position = "사업가";
+export const position = "대 표";
 // 직업
 export const job = "인공지능 개발자";
 // 핸드폰 번호

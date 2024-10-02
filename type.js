@@ -5,40 +5,39 @@ import * as set from './setting.js';
 
 // Full Name
 new TypeIt('.fullName', {
-    speed: 120,
+    speed: 100,
     cursor: false
 }).go();
 
 // Position
 new TypeIt('.position', {
-    speed: 250,
+    speed: 100,
     cursor: false
 })
-    .pause(5800)
+    .pause(4000)
     .delete(3)
     .pause(500)
     .type('백 수').go();
 
 // Job Title
 new TypeIt('.jobTitle', {
-    speed: 120,
+    speed: 100,
     cursor: false
 })
-    .pause(5200)
+    .pause(3000)
     .delete()
     .go();
 
 // Phone Link 타이핑 효과
 new TypeIt('.phone-link', {
-    speed: 100,
+    speed: 50,
     cursor: false,
     afterComplete: function () {
         document.querySelector('.phone-link').setAttribute('href', `tel:${set.phoneNumber}`);
-
         // Email Link 타이핑 효과 시작
         document.querySelector('.email-link').style.visibility = 'visible'; // 다음 링크 보이기
         new TypeIt('.email-link', {
-            speed: 100,
+            speed: 50,
             cursor: false,
             afterComplete: function () {
                 document.querySelector('.email-link').setAttribute('href', `mailto:${set.emailAddress}`);
@@ -46,7 +45,7 @@ new TypeIt('.phone-link', {
                 // Website Link 타이핑 효과 시작
                 document.querySelector('.website-link').style.visibility = 'visible'; // 다음 링크 보이기
                 new TypeIt('.website-link', {
-                    speed: 100,
+                    speed: 50,
                     cursor: false,
                     afterComplete: function () {
                         document.querySelector('.website-link').setAttribute('href', set.websiteURL);
