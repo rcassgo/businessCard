@@ -16,7 +16,7 @@ new TypeIt('.position', {
 })
     .pause(3800)
     .delete(3)
-    .pause(800)
+    .pause(500)
     .type('백 수').go();
 
 // Job Title
@@ -28,7 +28,6 @@ new TypeIt('.jobTitle', {
     .delete(10)
     .go();
 
-// Phone Number (타이핑은 적용하고, href는 afterComplete에서 다시 설정)
 new TypeIt('.phone-link', {
     speed: 120,
     cursor: false,
@@ -37,7 +36,6 @@ new TypeIt('.phone-link', {
     }
 }).go();
 
-// Email Address (타이핑은 적용하고, href는 afterComplete에서 다시 설정)
 new TypeIt('.email-link', {
     speed: 120,
     cursor: false,
@@ -46,7 +44,6 @@ new TypeIt('.email-link', {
     }
 }).go();
 
-// Website URL (타이핑은 적용하고, href는 afterComplete에서 다시 설정)
 new TypeIt('.website-link', {
     speed: 120,
     cursor: false,

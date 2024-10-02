@@ -94,7 +94,7 @@ span {
 }
 
 /* contactInfo */
-.number,
+.phoneNumber,
 .email,
 .site {
     display: flex;
@@ -114,8 +114,19 @@ span {
 .email-link,
 .website-link {
     font-size: 3vw;
+    transition: all 200ms ease-in-out;
 }
 
+.phone-link:hover,
+.email-link:hover,
+.website-link:hover {
+    background-color: #f0f0f0;
+    color: #007BFF;
+    border-radius: 5px;
+}
+
+
+/* socialLinks */
 .socialLinks {
     margin-top: 1.5vw;
     display: flex;
@@ -126,8 +137,14 @@ span {
 .instargram-icon,
 .x-icon {
     width: 4vw;
+    transition: all 200ms ease-in-out;
 }
 
+.facebook-icon:hover,
+.instargram-icon:hover,
+.x-icon:hover {
+    transform: scale(1.2);
+}
 
 @media screen and (min-width: 768px) {
     .separatorLine {
