@@ -161,7 +161,7 @@ span {
     }
 }
 
-@media screen and (max-width: 324px) {
+@media screen and (max-width: 400px) {
     .main {
         width: 22.5rem;
         height: 11.25rem;
