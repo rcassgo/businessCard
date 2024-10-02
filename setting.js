@@ -11,7 +11,7 @@ export const phoneNumber = "010-7652-0000";
 // 이메일
 export const emailAddress = "testtest@gmail.com";
 // 사이트 링크
-export const websiteURL = "http://op.gg";
+export const websiteURL = "https://naver.com";
 
 // SNS
 // 이미지 경로
