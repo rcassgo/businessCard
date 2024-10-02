@@ -86,8 +86,8 @@ span {
 .site {
     display: flex;
     align-items: center;
-    margin: 10px 0;
-    gap: 10px;
+    margin: 0.5rem 0;
+    gap: 0.5rem;
 }
 
 .number__img,
@@ -104,7 +104,7 @@ span {
 }
 
 .link {
-    margin-top: 0.5rem;
+    margin-top: 2vw;
     display: flex;
     gap: 4%;
 }
@@ -150,10 +150,66 @@ span {
         font-size: 1.5rem;
     }
 
+    .link {
+        margin-top: 1rem;
+    }
+
     .facebook,
     .instargram,
     .x {
         width: 30px;
     }
+}
 
+@media screen and (max-width: 324px) {
+    .main {
+        width: 22.5rem;
+        height: 11.25rem;
+    }
+
+    .main__line {
+        width: 0.075rem;
+        height: 8.6625rem;
+    }
+
+    .main__img {
+        width: 6.75rem;
+        margin: 1.5rem;
+    }
+
+    .main__textcontainer {
+        width: 6.75rem;
+        margin: 1rem;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .job {
+        font-size: 0.65rem;
+    }
+
+    .number__img,
+    .email__img,
+    .site__img {
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+
+    .number__a,
+    .email__a,
+    .site__a {
+        font-size: 0.75rem;
+    }
+
+    .link {
+        margin-top: 0.5rem;
+    }
+
+    .facebook,
+    .instargram,
+    .x {
+        width: 15px;
+    }
 }
