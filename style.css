@@ -99,8 +99,8 @@ span {
 .site {
     display: flex;
     align-items: center;
-    margin: 0.5rem 0;
-    gap: 0.5rem;
+    margin: 1vw 0;
+    gap: 1vw;
 }
 
 .phone-icon,
@@ -128,7 +128,7 @@ span {
 
 /* socialLinks */
 .socialLinks {
-    margin-top: 1.5vw;
+    margin-top: 1vw;
     display: flex;
     gap: 1vw;
 }
@@ -176,6 +176,15 @@ span {
         font-size: 1.3rem;
     }
 
+    .phoneNumber,
+    .email,
+    .site {
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 0;
+        gap: 0.5rem;
+    }
+
     .phone-icon,
     .email-icon,
     .website-icon {
@@ -190,7 +199,7 @@ span {
     }
 
     .socialLinks {
-        margin-top: 0.7rem;
+        margin-top: 0.5rem;
     }
 
     .facebook-icon,
@@ -202,20 +211,20 @@ span {
 
 @media screen and (max-width: 380px) {
     .businessCard {
-        width: 22rem;
+        width: 19rem;
     }
 
     .mainContent {
-        width: 22rem;
+        width: 19rem;
     }
 
     .separatorLine {
-        width: 0.075rem;
-        height: 8.6625rem;
+        width: 0.1rem;
+        height: 8rem;
     }
 
     .profileImage {
-        width: 6.75rem;
+        width: 5.5rem;
         margin: 1rem;
     }
 
@@ -237,6 +246,13 @@ span {
         font-size: 0.65rem;
     }
 
+    .phoneNumber,
+    .email,
+    .site {
+        margin: 0.3rem 0;
+        gap: 0.3rem;
+    }
+
     .phone-icon,
     .email-icon,
     .website-icon {
@@ -251,7 +267,7 @@ span {
     }
 
     .socialLinks {
-        margin-top: 0.3rem;
+        margin-top: 0.2rem;
     }
 
     .facebook-icon,
