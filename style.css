@@ -3,7 +3,7 @@
     /* App Colors */
     --color-frame: #000000;
     --color-text: #000000;
-    --color-line: black;
+    --color-line: rgb(162, 162, 162);
 
     --color-fullName: black;
     --color-job: #gray;
@@ -53,6 +53,7 @@ span {
 }
 
 .separatorLine {
+    opacity: 0;
     height: 80%;
     width: 0.5vw;
     background-color: var(--color-line);
