@@ -70,27 +70,29 @@ span {
 /*  personalInfo */
 .textContainer {
     /* margin: 4vw; */
+    width: 70%;
     display: flex;
     flex-direction: column;
 }
 
 .personalInfo {
-    margin: 2vw 0;
+    margin-bottom: 1vw;
 }
 
 .namePosition {
     display: flex;
+    align-items: flex-end;
 }
 
 .fullName {
-    font-family: "IBM Plex Sans KR", sans-serif;
     font-size: 5vw;
     color: var(--color-name);
 }
 
 .position {
     font-size: 2.1vw;
-    margin: 2.1vw;
+    margin-bottom: 0.5vw;
+    margin-left: 2vw;
 }
 
 .jobTitle {
@@ -156,30 +158,27 @@ span {
     transform: scale(1.2);
 }
 
-@media screen and (min-width: 768px) {
-    .separatorLine {
+@media screen and (min-width: 900px) {
+    /* .separatorLine {
         width: 0.2rem;
-    }
+    } */
 
     .profileImage {
-        margin: 3.5rem;
-    }
-
-    .textContainer {
-        margin: 4rem;
+        margin: 4.2rem;
     }
 
     .personalInfo {
-        margin: 1rem 0;
+        margin-bottom: 1rem;
     }
 
     .fullName {
-        font-size: 2.4rem;
+        font-size: 2.7rem;
     }
 
     .position {
         font-size: 1rem;
-        margin: 1rem;
+        margin-bottom: 0.3rem;
+        margin-left: 1rem;
     }
 
     .jobTitle {
@@ -198,24 +197,25 @@ span {
     .phone-icon,
     .email-icon,
     .website-icon {
-        width: 1.4rem;
-        height: 1.4rem;
+        width: 1.6rem;
+        height: 1.6rem;
     }
 
     .phone-link,
     .email-link,
     .website-link {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     .socialLinks {
         margin-top: 0.5rem;
+        gap: 0.5rem;
     }
 
     .facebook-icon,
     .instargram-icon,
     .x-icon {
-        width: 30px;
+        width: 2.2rem;
     }
 }
 
@@ -248,7 +248,8 @@ span {
 
     .position {
         font-size: 0.5rem;
-        margin: 0.5rem;
+        margin-bottom: 0.15rem;
+        margin-left: 0.5rem;
     }
 
     .jobTitle {
