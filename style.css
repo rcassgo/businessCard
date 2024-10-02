@@ -47,8 +47,8 @@ span {
 }
 
 .main__line {
-    height: 77%;
-    width: 0.3vw;
+    height: 80%;
+    width: 0.4vw;
     background-color: var(--color-line);
     border-radius: 50%;
 }
@@ -104,7 +104,7 @@ span {
 }
 
 .link {
-    margin-top: 2vw;
+    margin-top: 1.5vw;
     display: flex;
     gap: 4%;
 }
@@ -118,11 +118,11 @@ span {
 
 @media screen and (min-width: 768px) {
     .main__line {
-        width: 0.15rem;
+        width: 0.18rem;
     }
 
     .main__img {
-        margin: 3rem;
+        margin: 2.8rem;
     }
 
     .main__textcontainer {
@@ -151,7 +151,7 @@ span {
     }
 
     .link {
-        margin-top: 1rem;
+        margin-top: 0.7rem;
     }
 
     .facebook,
@@ -161,10 +161,10 @@ span {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 380px) {
     .main {
-        width: 22.5rem;
-        height: 11.25rem;
+        width: 22rem;
+        height: 11rem;
     }
 
     .main__line {
@@ -204,7 +204,7 @@ span {
     }
 
     .link {
-        margin-top: 0.5rem;
+        margin-top: 0.3rem;
     }
 
     .facebook,
