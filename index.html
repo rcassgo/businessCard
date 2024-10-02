@@ -5,47 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Serif+KR:wght@200..900&display=swap"
         rel="stylesheet">
-    <script type="module" src="main.js" defer></script>
+    <script type="module" src="main.js"></script>
+    <script src="type.js" defer></script>
     <title>Document</title>
 </head>
 
 <body>
-    <div class="card">
-        <section class="main">
-            <img class="main__img" src="imges/me.png">
-            <div class="main__line"></div>
-            <section class="main__textcontainer">
-                <section class="my">
-                    <span class="name"></span>
-                    <span class="job"></span>
+    <div class="businessCard">
+        <section class="mainContent">
+            <img class="profileImage">
+            <div class="separatorLine"></div>
+            <section class="textContainer">
+                <section class="personalInfo">
+                    <div class="namePosition">
+                        <span class="fullName"></span>
+                        <span class="position"></span>
+                    </div>
+                    <span class="jobTitle"></span>
                 </section>
 
-                <section class="info">
-                    <div class="number">
-                        <img class="number__img" src="imges/number.png">
-                        <a class="number__a"></a>
+                <section class="contactInfo">
+                    <div class="phoneNumber">
+                        <img class="phone-icon" src="imges/number.png">
+                        <a class="phone-link"></a>
                     </div>
                     <div class="email">
-                        <img class="email__img" src="imges/email.png">
-                        <a class="email__a"></a>
+                        <img class="email-icon" src="imges/email.png">
+                        <a class="email-link"></a>
                     </div>
                     <div class="site">
-                        <img class="site__img" src="imges/site.png">
-                        <a class="site__a" target="_blank"></a>
+                        <img class="website-icon" src="imges/site.png">
+                        <a class="website-link" target="_blank"></a>
                     </div>
                 </section>
 
-                <section class="link">
-                    <a class="facebook__a" target="_blank"><img class="facebook" src="imges/facebook.png"></a>
-                    <a class="instargram__a" target="_blank"><img class="instargram" src="imges/instargram.png"></a>
-                    <a class="x__a" target="_blank"><img class="x" src="imges/x.png"></a>
+                <section class="socialLinks">
+                    <a class="facebook-link" target="_blank"><img class="facebook-icon"></a>
+                    <a class="instagram-link" target="_blank"><img class="instargram-icon"></a>
+                    <a class="x-link" target="_blank"><img class="x-icon"></a>
                 </section>
             </section>
         </section>
-        <section class="comment"></section>
+        <section class="comments"></section>
     </div>
 
 </body>

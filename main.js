@@ -1,17 +1,24 @@
 import * as set from './setting.js';
 
-document.querySelector(".name").textContent = set.name;
-document.querySelector(".job").textContent = set.job;
+document.querySelector(".profileImage").src = set.img;
 
-document.querySelector(".number__a").href = `tel:${set.phoneNumber}`;
-document.querySelector(".number__a").textContent = set.phoneNumber;
+document.querySelector(".fullName").textContent = set.name;
+document.querySelector(".position").textContent = set.position;
+document.querySelector(".jobTitle").textContent = set.job;
 
-document.querySelector(".email__a").href = `mailto:${set.emailAddress}`;
-document.querySelector(".email__a").textContent = set.emailAddress;
+document.querySelector(".phone-icon").href = `tel:${set.phoneNumber}`;
+document.querySelector(".phone-link").textContent = set.phoneNumber;
 
-document.querySelector(".site__a").href = set.websiteURL;
-document.querySelector(".site__a").textContent = set.websiteURL;
+document.querySelector(".email-icon").href = `mailto:${set.emailAddress}`;
+document.querySelector(".email-link").textContent = set.emailAddress;
 
-document.querySelector(".facebook__a").href = set.facebookURL;
-document.querySelector(".instargram__a").href = set.instargram;
-document.querySelector(".x__a").href = set.x;
+document.querySelector(".website-icon").href = set.websiteURL;
+document.querySelector(".website-link").textContent = set.websiteURL;
+
+document.querySelector(".facebook-icon").src = set.facebookImg;
+document.querySelector(".instargram-icon").src = set.instargramImg;
+document.querySelector(".x-icon").src = set.xImg;
+
+document.querySelector(".facebook-link").href = set.facebook;
+document.querySelector(".instagram-link").href = set.instargram;
+document.querySelector(".x-link").href = set.x;
