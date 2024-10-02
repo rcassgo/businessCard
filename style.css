@@ -39,7 +39,7 @@ span {
 }
 
 .businessCard {
-    width: 90%;
+    width: 80%;
     max-width: 45rem;
     aspect-ratio: 2 / 1;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
