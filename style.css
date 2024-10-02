@@ -42,7 +42,7 @@ span {
 .businessCard {
     width: 80%;
     max-width: 45rem;
-    aspect-ratio: 2 / 1;
+    aspect-ratio: 2 / 1.2;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #ffffff;
 }
@@ -64,12 +64,12 @@ span {
 
 .profileImage {
     width: 30%;
-    margin: 4vw;
+    margin: 5vw;
 }
 
 /*  personalInfo */
 .textContainer {
-    margin: 4vw;
+    /* margin: 4vw; */
     display: flex;
     flex-direction: column;
 }
@@ -95,7 +95,6 @@ span {
 .jobTitle {
     font-size: 2.7vw;
 }
-
 
 
 /* contactInfo */
@@ -166,7 +165,7 @@ span {
     }
 
     .textContainer {
-        margin: 2rem;
+        margin: 4rem;
     }
 
     .personalInfo {
@@ -234,13 +233,12 @@ span {
     }
 
     .profileImage {
-        width: 5.5rem;
+        width: 5.8rem;
         margin: 1rem;
     }
 
     .textContainer {
-        width: 6.75rem;
-        margin: 1rem;
+        margin: 0.3rem;
     }
 
     .fullName {
