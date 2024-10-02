@@ -32,6 +32,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f0f0f0;
 }
 
 span {
@@ -43,6 +44,7 @@ span {
     max-width: 45rem;
     aspect-ratio: 2 / 1;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #ffffff;
 }
 
 .mainContent {
@@ -116,6 +118,11 @@ span {
 .website-link {
     font-size: 3vw;
     transition: all 200ms ease-in-out;
+}
+
+.email-link,
+.website-link {
+    visibility: hidden;
 }
 
 .phone-link:hover,
