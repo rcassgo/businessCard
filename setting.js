@@ -1,7 +1,7 @@
 // 이미지 경로
-export const img = "imges/me4.png";
+export const img = "imges/me6-blue.png";
 // 이름
-export const name = "노우준";
+export const name = "노 우 준";
 // 직책
 export const position = "대 표";
 // 직업
@@ -15,8 +15,8 @@ export const websiteURL = "https://naver.com";
 
 // SNS
 // 이미지 경로
-export const facebookImg = "imges/facebook.png";
-export const instargramImg = "imges/instargram.png";
+export const facebookImg = "imges/facebook-black-circle.png";
+export const instargramImg = "imges/instargram-black-circle.png";
 export const xImg = "imges/x.png"
 // 링크
 export const facebook = "https://facebook.com";
