@@ -11,3 +11,7 @@ document.querySelector(".email__a").textContent = set.emailAddress;
 
 document.querySelector(".site__a").href = set.websiteURL;
 document.querySelector(".site__a").textContent = set.websiteURL;
+
+document.querySelector(".facebook__a").href = set.facebookURL;
+document.querySelector(".instargram__a").href = set.instargram;
+document.querySelector(".x__a").href = set.x;
