@@ -57,7 +57,6 @@ span {
 }
 
 .separatorLine {
-    /* Re */
     width: 0.1vw;
     height: 60%;
     margin: 0 5vw;
@@ -65,7 +64,6 @@ span {
 }
 
 .profileImage {
-    /* Re */
     width: 30%;
     margin-left: 10vw;
 }
@@ -78,7 +76,6 @@ span {
 }
 
 .personalInfo {
-    /* Re */
     margin-bottom: 3vw;
 }
 
@@ -95,13 +92,11 @@ span {
 
 .position {
     font-size: 2.1vw;
-    /* Re */
     margin: 2vw;
     color: var(--color-position);
 }
 
 .jobTitle {
-    /* Re */
     font-size: 2.5vw;
     color: var(--color-job);
 }
@@ -124,13 +119,11 @@ span {
 }
 
 .phone-link {
-    /* Re */
     font-size: 2.6vw;
 }
 
 .email-link,
 .website-link {
-    /* Re */
     font-size: 2.8vw;
 }
 
@@ -159,7 +152,7 @@ span {
 .instargram-icon,
 .x-icon {
     width: 3vw;
-    transition: all 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
     /* filter: grayscale(100%); */
 }
 
@@ -280,7 +273,7 @@ span {
     }
 
     .phone-link {
-        /* Re */
+
         font-size: 0.6rem;
     }
 
