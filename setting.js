@@ -1,7 +1,7 @@
 // 이미지 경로
 export const img = "imges/me6.png";
 // 이름
-export const name = "노 우 준";
+export const name = "노우준";
 // 직책
 export const position = "대 표";
 // 직업
