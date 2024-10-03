@@ -72,7 +72,7 @@ span {
 
 /*  personalInfo */
 .textContainer {
-    margin-top: 1vw;
+    margin-top: 3vw;
     margin-left: 1vw;
     display: flex;
     flex-direction: column;
@@ -88,14 +88,16 @@ span {
 }
 
 .fullName {
-    font-family: "Noto Serif KR", serif;
+    /* font-family: "Noto Serif KR", serif; */
+    font-family: "Nanum Gothic Coding", monospace;
     font-size: 4.2vw;
     color: var(--color-fullName);
+    letter-spacing: 0.25em;
 }
 
 .position {
     font-size: 2.1vw;
-    margin-left: 2vw;
+    margin-left: 1vw;
     margin-top: 1vw;
     color: var(--color-position);
 }
@@ -148,7 +150,7 @@ span {
 /* socialLinks */
 .socialLinks {
     display: flex;
-    margin-top: 1.5vw;
+    margin-top: 0.5vw;
     margin-left: 4vw;
     gap: 1.5vw;
 }
@@ -177,6 +179,7 @@ span {
     }
 
     .textContainer {
+        margin-top: 1.5rem;
         margin-left: 0.62rem;
     }
 
@@ -191,8 +194,8 @@ span {
 
     .position {
         font-size: 1.18rem;
-        margin-left: 1.14rem;
-        margin-top: 0.6rem;
+        margin-left: 0.6rem;
+        margin-top: 0.4rem;
     }
 
     .jobTitle {
@@ -224,8 +227,8 @@ span {
     }
 
     .socialLinks {
-        margin-left: 2.4rem;
-        margin-top: 0.9rem;
+        margin-top: 0.3rem;
+        margin-left: 2.3rem;
         gap: 0.8rem;
     }
 
@@ -254,11 +257,12 @@ span {
     }
 
     .textContainer {
-        margin: 0.2rem;
+        margin-top: 0.35rem;
+        margin-left: 0.2rem;
     }
 
     .personalInfo {
-        margin-top: 0.2rem;
+        margin-top: 0.4rem;
         margin-bottom: 0.4rem;
     }
 
@@ -268,8 +272,8 @@ span {
 
     .position {
         font-size: 0.5rem;
-        margin-left: 0.5rem;
-        margin-top: 0.3rem;
+        margin-left: 0.3rem;
+        margin-top: 0.2rem;
     }
 
     .jobTitle {
@@ -297,12 +301,12 @@ span {
 
     .email-link,
     .website-link {
-        font-size: 0.6rem;
+        font-size: 0.55rem;
     }
 
     .socialLinks {
         margin-left: 0.95rem;
-        margin-top: 0.3rem;
+        margin-top: 0rem;
         gap: 0.4rem;
     }
 
