@@ -119,8 +119,8 @@ span {
 .phone-icon,
 .email-icon,
 .website-icon {
-    width: 3vw;
-    height: 3vw;
+    width: 2.5vw;
+    height: 2.5vw;
 }
 
 .phone-link {
@@ -210,8 +210,8 @@ span {
     .phone-icon,
     .email-icon,
     .website-icon {
-        width: 1.7rem;
-        height: 1.7rem;
+        width: 1.4rem;
+        height: 1.4rem;
     }
 
     .phone-link {
@@ -287,8 +287,8 @@ span {
     .phone-icon,
     .email-icon,
     .website-icon {
-        width: 0.7rem;
-        height: 0.7rem;
+        width: 0.6rem;
+        height: 0.6rem;
     }
 
     .phone-link {
