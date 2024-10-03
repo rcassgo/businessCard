@@ -29,7 +29,8 @@ a:visited {
 }
 
 body {
-    font-family: "Nanum Myeongjo", serif;
+    font-family: "Orbit", sans-serif;
+    /* font-family: "Nanum Myeongjo", serif; */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -52,10 +53,12 @@ span {
 }
 
 .mainContent {
-    width: 100%;
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
+    /* justify-content: center;
+    margin: auto; */
 }
 
 .separatorLine {
@@ -66,13 +69,14 @@ span {
 }
 
 .profileImage {
-    width: 30%;
-    margin-left: 10vw;
+    width: 27%;
+    margin-left: 9vw;
+
 }
 
 /*  personalInfo */
 .textContainer {
-    margin-top: 3vw;
+    margin-top: 1vw;
     margin-left: 1vw;
     display: flex;
     flex-direction: column;
@@ -105,6 +109,7 @@ span {
 .jobTitle {
     font-size: 2.07vw;
     margin-top: 0.3vw;
+    margin-left: 0.25vw;
     color: var(--color-job);
 }
 
@@ -114,7 +119,7 @@ span {
 .site {
     display: flex;
     align-items: center;
-    margin: 1vw 0;
+    margin: 0;
     gap: 1.8vw;
 }
 
@@ -150,7 +155,7 @@ span {
 /* socialLinks */
 .socialLinks {
     display: flex;
-    margin-top: 0.5vw;
+    margin-top: 1.5vw;
     margin-left: 4vw;
     gap: 1.5vw;
 }
