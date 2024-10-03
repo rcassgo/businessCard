@@ -45,8 +45,9 @@ span {
     max-width: 45rem;
     aspect-ratio: 2 / 1.2;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-image: url("imges/background.png");
-    filter: brightness(1.18);
+    background-image: url("imges/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .mainContent {
