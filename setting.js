@@ -11,7 +11,7 @@ export const phoneNumber = "+8210 7652 0000";
 // 이메일
 export const emailAddress = "nowoojun@naver.com";
 // 사이트 링크
-export const websiteURL = "rcassgo.github.io/ai/";
+export const websiteURL = "https://rcassgo.github.io/ai/";
 
 // SNS
 // 이미지 경로
