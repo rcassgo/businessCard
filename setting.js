@@ -7,11 +7,11 @@ export const position = "대 표";
 // 직업
 export const job = "인공지능 개발자";
 // 핸드폰 번호
-export const phoneNumber = "010-7652-0000";
+export const phoneNumber = "+8210 7652 0000";
 // 이메일
-export const emailAddress = "testtest@gmail.com";
+export const emailAddress = "nowoojun@naver.com";
 // 사이트 링크
-export const websiteURL = "https://naver.com";
+export const websiteURL = "rcassgo.github.io/ai/";
 
 // SNS
 // 이미지 경로
