@@ -12,8 +12,8 @@ document.querySelector(".phone-link").textContent = set.phoneNumber;
 document.querySelector(".email-link").href = `mailto:${set.emailAddress}`;
 document.querySelector(".email-link").textContent = set.emailAddress;
 
-document.querySelector(".website-link").href = set.websiteURL;
-document.querySelector(".website-link").textContent = set.websiteURL;
+document.querySelector(".website-link").href = set.websiteURL__Real;
+document.querySelector(".website-link").textContent = set.websiteURL__LOOK;
 
 document.querySelector(".facebook-icon").src = set.facebookImg;
 document.querySelector(".instargram-icon").src = set.instargramImg;
@@ -23,24 +23,6 @@ document.querySelector(".facebook-link").href = set.facebook;
 document.querySelector(".instagram-link").href = set.instargram;
 document.querySelector(".x-link").href = set.x;
 
-
-function setInitialContainerWidth() {
-    const textContainer = document.querySelector('.textContainer');
-    const elements = textContainer.querySelectorAll('span, a');
-
-    let maxWidth = 0;
-
-    elements.forEach((element) => {
-        const elementWidth = element.offsetWidth; // 각 요소의 너비 계산
-        if (elementWidth > maxWidth) {
-            maxWidth = elementWidth; // 가장 큰 너비를 저장
-        }
-    });
-    textContainer.style.width = `${maxWidth}px`; // 가장 큰 요소의 너비로 textContainer의 너비 설정
-}
-
-// 페이지 로드 시 실행
-window.addEventListener('load', setInitialContainerWidth);
 const businessCard = document.querySelector('.businessCard');
 let originalHTML = businessCard.innerHTML;
 let isCleared = false;
@@ -75,3 +57,11 @@ businessCard.addEventListener('click', (event) => {
         }
     }
 });
+
+function setInitialContainerWidth() {
+    const textContainer = document.querySelector('.textContainer');
+    const containerWidth = textContainer.offsetWidth;
+    textContainer.style.width = `${containerWidth}px`;
+}
+// 페이지 로드 시 실행
+window.addEventListener('load', setInitialContainerWidth);

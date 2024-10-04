@@ -23,10 +23,6 @@ new TypeIt('.fullName', {
                     beforeString: (instance) => {
                         document.querySelector('.jobTitle').style.opacity = '1';
                     },
-                    afterComplete: function () {
-                        // 타이핑이 모두 끝났을 때 textContainer의 고정 너비 삭제
-                        document.querySelector('.textContainer').style.width = '';
-                    }
                 }).go();
             }
         }).go();
@@ -51,7 +47,7 @@ new TypeIt('.phone-link', {
                     speed: 50,
                     cursor: false,
                     afterComplete: function () {
-                        websiteLink.style.color = 'var(--color-info)'; // 색상 다시 설정
+                        document.querySelector('.textContainer').style.width = '';
                     }
                 }).go();
             }

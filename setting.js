@@ -10,8 +10,10 @@ export const job = "인공지능 개발자";
 export const phoneNumber = "+82 10.7652.3821";
 // 이메일
 export const emailAddress = "nowoojun@naver.com";
-// 사이트 링크
-export const websiteURL = "www.google.com";
+// 명항에 보여지는 링크
+export const websiteURL__LOOK = "www.rcassgo.io";
+// 실제 링크
+export const websiteURL__Real = "https://rcassgo.github.io/ai/";
 
 // SNS
 // 이미지 경로
