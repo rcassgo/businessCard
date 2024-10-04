@@ -52,7 +52,7 @@ span {
     background-size: cover;
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 3000ms;
+    transition: transform 1000ms;
 }
 
 .businessCard.flipped {
@@ -128,7 +128,6 @@ span {
 
 .jobTitle {
     font-size: clamp(0.5rem, 2.07vw, 1.17rem);
-    margin-top: clamp(0.1rem, 0.3vw, 0.17rem);
     margin-left: clamp(0.1rem, 0.25vw, 0.17rem);
     color: var(--color-job);
 }
@@ -169,6 +168,14 @@ span {
     color: var(--color-info);
 }
 
+.fullName,
+.position,
+.jobTitle,
+.email-link,
+.website-link {
+    opacity: 0;
+}
+
 /* socialLinks */
 .socialLinks {
     display: flex;
@@ -200,7 +207,7 @@ span {
 
 .back-main {
     font-family: "Source Code Pro", monospace;
-    font-size: clamp(2rem, 8vw, 4.5rem);
+    font-size: clamp(1.6rem, 6.5vw, 3.55rem);
     margin-top: -1rem;
 }
 

@@ -50,3 +50,11 @@ businessCard.addEventListener('click', (event) => {
         }
     }
 });
+
+function setInitialContainerWidth() {
+    const textContainer = document.querySelector('.textContainer');
+    const containerWidth = textContainer.offsetWidth;
+    textContainer.style.width = `${containerWidth}px`;
+}
+// 페이지 로드 시 실행
+window.addEventListener('load', setInitialContainerWidth);
