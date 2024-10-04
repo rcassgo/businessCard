@@ -1,14 +1,11 @@
 'use strict';
 
-// setting.js에서 필요한 데이터 임포트
-import * as set from './setting.js';
-
 // Full Name
 new TypeIt('.fullName', {
     speed: 100,
     cursor: false,
     beforeString: (instance) => {
-        document.querySelector('.fullName').style.visibility = 'visible';
+        document.querySelector('.fullName').style.opacity = '1';
     },
     afterComplete: function () {
         // Position 타이핑 효과 시작
@@ -16,7 +13,7 @@ new TypeIt('.fullName', {
             speed: 100,
             cursor: false,
             beforeString: (instance) => {
-                document.querySelector('.position').style.visibility = 'visible';
+                document.querySelector('.position').style.opacity = '1';
             },
             afterComplete: function () {
                 // Job Title 타이핑 효과 시작
@@ -24,7 +21,11 @@ new TypeIt('.fullName', {
                     speed: 100,
                     cursor: false,
                     beforeString: (instance) => {
-                        document.querySelector('.jobTitle').style.visibility = 'visible';
+                        document.querySelector('.jobTitle').style.opacity = '1';
+                    },
+                    afterComplete: function () {
+                        // 타이핑이 모두 끝났을 때 textContainer의 고정 너비 삭제
+                        document.querySelector('.textContainer').style.width = '';
                     }
                 }).go();
             }
@@ -37,23 +38,19 @@ new TypeIt('.phone-link', {
     speed: 50,
     cursor: false,
     afterComplete: function () {
-        document.querySelector('.phone-link').setAttribute('href', `tel:${set.phoneNumber}`);
         // Email Link 타이핑 효과 시작
-        document.querySelector('.email-link').style.visibility = 'visible'; // 다음 링크 보이기
+        document.querySelector('.email-link').style.opacity = '1';
         new TypeIt('.email-link', {
             speed: 50,
             cursor: false,
             afterComplete: function () {
-                document.querySelector('.email-link').setAttribute('href', `mailto:${set.emailAddress}`);
 
                 // Website Link 타이핑 효과 시작
-                document.querySelector('.website-link').style.visibility = 'visible'; // 다음 링크 보이기
+                document.querySelector('.website-link').style.opacity = '1';
                 new TypeIt('.website-link', {
                     speed: 50,
                     cursor: false,
                     afterComplete: function () {
-                        const websiteLink = document.querySelector('.website-link');
-                        websiteLink.setAttribute('href', set.websiteURL);
                         websiteLink.style.color = 'var(--color-info)'; // 색상 다시 설정
                     }
                 }).go();

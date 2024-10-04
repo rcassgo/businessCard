@@ -13,7 +13,6 @@
     --color-black: #000000;
 }
 
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -44,45 +43,68 @@ span {
 
 .businessCard {
     width: 80%;
+    min-width: 19rem;
     max-width: 45rem;
     aspect-ratio: 2 / 1.2;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-image: url("imges/background2.png");
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.businessCard.flipped {
+    transform: rotateY(180deg);
+}
+
+.businessCard-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: var(--color-frame);
 }
 
 .mainContent {
     height: 100%;
     width: 100%;
+    min-width: 19rem;
     display: flex;
     align-items: center;
-    /* justify-content: center;
-    margin: auto; */
+    justify-content: center;
+    backface-visibility: hidden;
 }
 
 .separatorLine {
-    width: 0.1vw;
+    width: 0.1%;
     height: 60%;
-    margin: 0 5vw;
+    margin: 0 clamp(1.21rem, 5vw, 2.8rem);
     background-color: var(--color-line);
 }
 
 .profileImage {
     width: 27%;
-    margin-left: 7.5vw;
-
 }
 
-/*  personalInfo */
+/* TEXT */
 .textContainer {
-    margin-top: 1vw;
+    margin-top: clamp(0.35rem, 1vw, 1.5rem);
     display: flex;
     flex-direction: column;
 }
 
+/*  personalInfo */
 .personalInfo {
-    margin-bottom: 2vw;
+    margin-bottom: clamp(0.4rem, 2vw, 1.2rem);
 }
 
 .namePosition {
@@ -93,22 +115,22 @@ span {
 .fullName {
     /* font-family: "Noto Serif KR", serif; */
     font-family: "Nanum Gothic Coding", monospace;
-    font-size: 4.2vw;
+    font-size: clamp(1rem, 4.2vw, 2.36rem);
     color: var(--color-fullName);
     letter-spacing: 0.25em;
 }
 
 .position {
-    font-size: 2.1vw;
-    margin-left: 1vw;
-    margin-top: 1vw;
+    font-size: clamp(0.5rem, 2.1vw, 1.18rem);
+    margin-left: clamp(0.3rem, 1vw, 0.6rem);
+    margin-top: clamp(0.2rem, 1vw, 0.4rem);
     color: var(--color-position);
 }
 
 .jobTitle {
-    font-size: 2.07vw;
-    margin-top: 0.3vw;
-    margin-left: 0.25vw;
+    font-size: clamp(0.5rem, 2.07vw, 1.17rem);
+    margin-top: clamp(0.1rem, 0.3vw, 0.17rem);
+    margin-left: clamp(0.1rem, 0.25vw, 0.17rem);
     color: var(--color-job);
 }
 
@@ -119,23 +141,27 @@ span {
     display: flex;
     align-items: center;
     margin: 0;
-    gap: 1.8vw;
+    gap: clamp(0.4rem, 1.8vw, 1rem);
 }
 
 .phone-icon,
 .email-icon,
 .website-icon {
     width: 2.5vw;
+    min-width: 0.6rem;
+    max-width: 1.4rem;
     height: 2.5vw;
+    min-height: 0.6rem;
+    max-height: 1.4rem;
 }
 
 .phone-link {
-    font-size: 2.2vw;
+    font-size: clamp(0.52rem, 2.2vw, 1.25rem);
 }
 
 .email-link,
 .website-link {
-    font-size: 2.4vw;
+    font-size: clamp(0.55rem, 2.4vw, 1.35rem);
 }
 
 .phone-link,
@@ -144,27 +170,35 @@ span {
     color: var(--color-info);
 }
 
+.fullName,
 .position,
 .jobTitle,
 .email-link,
 .website-link {
-    visibility: hidden;
+    opacity: 0;
 }
 
 /* socialLinks */
 .socialLinks {
     display: flex;
-    margin-top: 1.5vw;
-    margin-left: 4vw;
-    gap: 1.5vw;
+    margin-top: clamp(0.5rem, 1.5vw, 0.6rem);
+    margin-left: clamp(0.9rem, 4vw, 2.3rem);
+    gap: clamp(0.4rem, 1.5vw, 0.8rem);
+}
+
+.facebook-link,
+.instagram-link,
+.x-link {
+    line-height: 0;
 }
 
 .facebook-icon,
 .instargram-icon,
 .x-icon {
     width: 2.5vw;
+    min-width: 0.6rem;
+    max-width: 1.4rem;
     transition: transform 200ms ease-in-out;
-    /* filter: grayscale(100%); */
 }
 
 .facebook-icon:hover,
@@ -173,148 +207,15 @@ span {
     transform: scale(1.2);
 }
 
-@media screen and (min-width: 900px) {
-    .separatorLine {
-        margin: 0 2.8rem;
-    }
-
-    .profileImage {
-        margin-left: 5.51rem;
-    }
-
-    .textContainer {
-        margin-top: 1.5rem;
-    }
-
-    .personalInfo {
-        margin-top: 0.3rem;
-        margin-bottom: 1.2rem;
-    }
-
-    .fullName {
-        font-size: 2.36rem;
-    }
-
-    .position {
-        font-size: 1.18rem;
-        margin-left: 0.6rem;
-        margin-top: 0.4rem;
-    }
-
-    .jobTitle {
-        font-size: 1.17rem;
-        margin-top: 0.17rem;
-    }
-
-    .phoneNumber,
-    .email,
-    .site {
-        margin: 0.5rem 0;
-        gap: 1rem;
-    }
-
-    .phone-icon,
-    .email-icon,
-    .website-icon {
-        width: 1.4rem;
-        height: 1.4rem;
-    }
-
-    .phone-link {
-        font-size: 1.25rem;
-    }
-
-    .email-link,
-    .website-link {
-        font-size: 1.35rem;
-    }
-
-    .socialLinks {
-        margin-top: 0.3rem;
-        margin-left: 2.3rem;
-        gap: 0.8rem;
-    }
-
-    .facebook-icon,
-    .instargram-icon,
-    .x-icon {
-        width: 1.4rem;
-    }
+.back-main {
+    font-family: "Source Code Pro", monospace;
+    font-size: 3rem;
+    margin-top: -10px;
 }
 
-@media screen and (max-width: 380px) {
-    .businessCard {
-        width: 19rem;
-    }
-
-    .mainContent {
-        width: 19rem;
-    }
-
-    .separatorLine {
-        margin: 0 1.21rem;
-    }
-
-    .profileImage {
-        margin-left: 2.38rem;
-    }
-
-    .textContainer {
-        margin-top: 0.35rem;
-    }
-
-    .personalInfo {
-        margin-top: 0.4rem;
-        margin-bottom: 0.4rem;
-    }
-
-    .fullName {
-        font-size: 1rem;
-    }
-
-    .position {
-        font-size: 0.5rem;
-        margin-left: 0.3rem;
-        margin-top: 0.2rem;
-    }
-
-    .jobTitle {
-        font-size: 0.5rem;
-        margin-top: 0.1rem;
-    }
-
-    .phoneNumber,
-    .email,
-    .site {
-        margin: 0.25rem 0;
-        gap: 0.4rem;
-    }
-
-    .phone-icon,
-    .email-icon,
-    .website-icon {
-        width: 0.6rem;
-        height: 0.6rem;
-    }
-
-    .phone-link {
-        font-size: 0.52rem;
-    }
-
-    .email-link,
-    .website-link {
-        font-size: 0.55rem;
-    }
-
-    .socialLinks {
-        margin-left: 0.95rem;
-        margin-top: 0rem;
-        gap: 0.4rem;
-    }
-
-    .facebook-icon,
-    .instargram-icon,
-    .x-icon {
-        width: 0.6rem;
-    }
+.back-des {
+    font-family: "Exo 2", sans-serif;
+    font-size: 1rem;
+    transform: scaleX(1.2);
+    margin-top: -10px;
 }

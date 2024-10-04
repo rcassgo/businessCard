@@ -7,11 +7,11 @@ export const position = "대 표";
 // 직업
 export const job = "인공지능 개발자";
 // 핸드폰 번호
-export const phoneNumber = "+8210 7652 0000";
+export const phoneNumber = "+82 10.7652.3821";
 // 이메일
 export const emailAddress = "nowoojun@naver.com";
 // 사이트 링크
-export const websiteURL = "https://rcassgo.github.io/ai/";
+export const websiteURL = "www.google.com";
 
 // SNS
 // 이미지 경로
@@ -21,4 +21,9 @@ export const xImg = "imges/x.png"
 // 링크
 export const facebook = "https://facebook.com";
 export const instargram = "https://www.instagram.com/";
-export const x = "https://x.com/"
+export const x = "https://x.com/";
+
+
+// 뒷면
+export const backMain = "Noh W. J.";
+export const backDes = "Artificial Intelligence Developer";
