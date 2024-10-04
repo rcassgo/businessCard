@@ -27,13 +27,8 @@ const businessCard = document.querySelector('.businessCard');
 let originalHTML = businessCard.innerHTML;
 let isCleared = false;
 
+const businessCardBack = document.querySelector('.businessCard-back');
 
-const backSide = document.createElement('div');
-backSide.classList.add('businessCard-back');
-backSide.innerHTML = `
-    <h2 class="back-main"></h2>
-    <p class="back-des"></p>
-`;
 
 businessCard.addEventListener('click', (event) => {
     // 클릭된 요소가 전화번호, 이메일, 소셜 링크가 아닌 경우에만 뒷면으로 이동
@@ -43,13 +38,11 @@ businessCard.addEventListener('click', (event) => {
         !event.target.closest('.socialLinks a')) {
 
         if (isCleared) {
-            businessCard.innerHTML = originalHTML;
             businessCard.classList.remove('flipped');
             isCleared = false;
         } else {
             originalHTML = businessCard.innerHTML;
-            businessCard.innerHTML = '';
-            businessCard.appendChild(backSide);
+            // businessCard.innerHTML = '';
             businessCard.classList.add('flipped');
             document.querySelector(".back-main").textContent = set.backMain;
             document.querySelector(".back-des").textContent = set.backDes;
@@ -57,11 +50,3 @@ businessCard.addEventListener('click', (event) => {
         }
     }
 });
-
-function setInitialContainerWidth() {
-    const textContainer = document.querySelector('.textContainer');
-    const containerWidth = textContainer.offsetWidth;
-    textContainer.style.width = `${containerWidth}px`;
-}
-// 페이지 로드 시 실행
-window.addEventListener('load', setInitialContainerWidth);
