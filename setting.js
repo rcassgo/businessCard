@@ -28,4 +28,4 @@ export const x = "https://x.com/";
 
 // 뒷면
 export const backMain = "Noh W. J.";
-export const backDes = "Artificial Intelligence Developer";
+export const backjobTitle = "Artificial Intelligence Developer";

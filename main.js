@@ -45,7 +45,7 @@ businessCard.addEventListener('click', (event) => {
             // businessCard.innerHTML = '';
             businessCard.classList.add('flipped');
             document.querySelector(".back-main").textContent = set.backMain;
-            document.querySelector(".back-des").textContent = set.backDes;
+            document.querySelector(".back-jobTitle").textContent = set.backjobTitle;
             isCleared = true;
         }
     }
