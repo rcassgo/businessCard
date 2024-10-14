@@ -204,13 +204,13 @@ span {
 
 .arrow {
     position: absolute;
-    bottom: 5%;
+    bottom: 5.5%;
     right: 4%;
-    width: 5%;
+    width: 4.5%;
     transform: rotate(-15deg);
     opacity: 0;
     animation: fadeIn 800ms ease-in-out forwards;
-    animation-delay: 500ms;
+    animation-delay: 3700ms;
 }
 
 @keyframes fadeIn {
