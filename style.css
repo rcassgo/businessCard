@@ -80,6 +80,7 @@ span {
     align-items: center;
     justify-content: center;
     backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
 
 .separatorLine {
@@ -206,6 +207,8 @@ span {
     animation: fadeIn 800ms ease-in-out forwards;
     animation-delay: 500ms;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    z-index: 0;
 }
 
 @keyframes fadeIn {
