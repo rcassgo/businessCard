@@ -27,9 +27,6 @@ const businessCard = document.querySelector('.businessCard');
 let originalHTML = businessCard.innerHTML;
 let isCleared = false;
 
-const businessCardBack = document.querySelector('.businessCard-back');
-
-
 businessCard.addEventListener('click', (event) => {
     // 클릭된 요소가 전화번호, 이메일, 소셜 링크가 아닌 경우에만 뒷면으로 이동
     if (!event.target.closest('.phone-link') &&
@@ -50,11 +47,3 @@ businessCard.addEventListener('click', (event) => {
         }
     }
 });
-
-function setInitialContainerWidth() {
-    const textContainer = document.querySelector('.textContainer');
-    const containerWidth = textContainer.offsetWidth;
-    textContainer.style.width = `${containerWidth}px`;
-}
-// 페이지 로드 시 실행
-window.addEventListener('load', setInitialContainerWidth);

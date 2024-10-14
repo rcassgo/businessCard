@@ -1,7 +1,7 @@
 /* Global */
 :root {
     /* App Colors */
-    --color-frame: #e3e3e3;
+    --color-background: #e3e3e3;
     --color-text: #000000;
     --color-line: var(--color-black);
 
@@ -29,12 +29,11 @@ a:visited {
 
 body {
     font-family: "Orbit", sans-serif;
-    /* font-family: "Nanum Myeongjo", serif; */
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--color-frame);
+    background: var(--color-background);
 }
 
 span {
@@ -47,7 +46,7 @@ span {
     max-width: 45rem;
     aspect-ratio: 2 / 1.2;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-image: url("imges/background2.png");
+    background-image: url("img/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -70,7 +69,6 @@ span {
     height: 100%;
     backface-visibility: hidden;
     transform: rotateY(180deg);
-
 }
 
 .mainContent {
@@ -92,6 +90,7 @@ span {
 
 .profileImage {
     width: 27%;
+
 }
 
 /* TEXT */
@@ -112,7 +111,6 @@ span {
 }
 
 .fullName {
-    /* font-family: "Noto Serif KR", serif; */
     font-family: "Nanum Gothic Coding", monospace;
     font-size: clamp(1rem, 4.2vw, 2.36rem);
     color: var(--color-fullName);
@@ -137,7 +135,7 @@ span {
 .site {
     display: flex;
     align-items: center;
-    gap: clamp(0.4rem, 1.8vw, 1rem);
+    gap: clamp(0.4rem, 1.8vw, 1rem)
 }
 
 .phone-icon,
@@ -166,14 +164,6 @@ span {
     color: var(--color-info);
 }
 
-.fullName,
-.position,
-.jobTitle,
-.email-link,
-.website-link {
-    opacity: 0;
-}
-
 /* socialLinks */
 .socialLinks {
     display: flex;
@@ -195,6 +185,7 @@ span {
     min-width: 0.6rem;
     max-width: 1.4rem;
     transition: transform 200ms ease-in-out;
+
 }
 
 .facebook-icon:hover,
@@ -202,6 +193,28 @@ span {
 .x-icon:hover {
     transform: scale(1.2);
 }
+
+.arrow {
+    position: absolute;
+    bottom: 6%;
+    right: 4%;
+    width: 7%;
+    transform: rotate(15deg);
+    opacity: 0;
+    animation: fadeIn 1000ms ease-in-out forwards;
+    animation-delay: 2000ms;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 .back-main {
     font-family: "Source Code Pro", monospace;
