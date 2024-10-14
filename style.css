@@ -13,6 +13,7 @@
     --color-black: #000000;
 }
 
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -131,6 +132,14 @@ span {
     color: var(--color-job);
 }
 
+.fullName,
+.position,
+.jobTitle,
+.email-link,
+.website-link {
+    opacity: 0;
+}
+
 /* contactInfo */
 .phoneNumber,
 .email,
@@ -187,7 +196,6 @@ span {
     min-width: 0.6rem;
     max-width: 1.4rem;
     transition: transform 200ms ease-in-out;
-
 }
 
 .facebook-icon:hover,
@@ -197,18 +205,16 @@ span {
 }
 
 .arrow {
-    z-index: 0;
     position: absolute;
     bottom: 5.5%;
     right: 4%;
     width: 4.5%;
     transform: rotate(-15deg);
-    opacity: 1;
+    opacity: 0;
     animation: fadeIn 800ms ease-in-out forwards;
-    animation-delay: 500ms;
+    animation-delay: 3700ms;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    z-index: 0;
 }
 
 @keyframes fadeIn {
